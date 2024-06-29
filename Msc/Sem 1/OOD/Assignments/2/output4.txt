@@ -1,0 +1,13 @@
+$ java -cp . JavaReflector MyClass -o
+$ cat MyClass.java
+public class MyClass {
+	// Fields
+	static int num;
+
+	// Constructors
+	public MyClass();
+	private MyClass(int arg0);
+
+	// Methods
+	java.lang.String hello(int arg0, java.lang.String arg1);
+}

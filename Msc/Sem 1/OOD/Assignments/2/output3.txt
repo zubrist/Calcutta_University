@@ -1,0 +1,6 @@
+$ java JavaReflector java.awt.event.ActionListener
+package java.awt.event;
+public abstract interface ActionListener implements java.util.EventListener {
+	// Methods
+	public abstract void actionPerformed(java.awt.event.ActionEvent arg0);
+}
