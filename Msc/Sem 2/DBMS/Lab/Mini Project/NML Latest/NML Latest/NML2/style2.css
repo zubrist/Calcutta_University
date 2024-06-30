@@ -1,0 +1,48 @@
+.container-form2{
+    height:420px;
+    width: 559px;
+    background: rgba(0, 0, 0, .6); 
+    border-radius: 12px;
+    margin-top: 7%;
+    margin-left: 30%;
+}
+
+.container-form2 input{
+    padding:06px;
+    margin-top: 10%;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.container-form2 label{
+    margin-left: 5%;
+    color:#00b41e;
+}
+.heading{
+    background: rgba(0, 0, 0, .6);
+    height:70px;
+    text-align: center;
+}
+
+h1{
+    color:aliceblue;
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }

@@ -1,0 +1,64 @@
+/* Music-inspired styling */
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .form-container {
+      width: 60%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #222222;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .form-container label {
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .form-container input[type="text"],
+    .form-container select {
+      background-color: #333333;
+      border: none;
+      color: #ffffff;
+      font-size: 18px;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .add-song-btn {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-top: 22px;
+    }
+
+    .add-song-btn:hover {
+      background-color: #1bc82f;
+    }
+
+    .max-songs-msg {
+      font-size: 18px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .btn-primary {
+        margin-top: 10px;
+        margin-left: 10px ;  
+        padding: 10px 20px;
+    }

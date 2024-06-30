@@ -1,0 +1,120 @@
+<?php
+// Connect to the database
+$db = new mysqli('hostname', 'username', 'password', 'database_name');
+
+// Check for errors
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
+}
+
+// Check if the form has been submitted
+if (isset($_POST['musician_name'])) {
+    // Get the musician name from user input
+    $musician_name = $_POST['musician_name'];
+
+    // Create the query
+    $query = "SELECT album_name, album_type, song_title, instrument FROM musicians WHERE musician_name = ?";
+
+    // Prepare and execute the statement
+    $stmt = $db->prepare($query);
+    $stmt->bind_param("s", $musician_name);
+    $stmt->execute();
+
+    // Bind the results to variables
+    $stmt->bind_result($album_name, $album_type, $song_title, $instrument);
+
+    // Fetch the results and store them in an array
+    $results = [];
+    while ($stmt->fetch()) {
+        $results[] = [
+            'album_name' => $album_name,
+            'album_type' => $album_type,
+            'song_title' => $song_title,
+            'instrument' => $instrument,
+        ];
+    }
+
+    // Close the statement
+    $stmt->close();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musician Report</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Musician Report</h1>
+
+    <form method="post">
+        <label for="musician_name">Musician Name:</label><br>
+        <input type="text" id="musician_name" name="musician_name"><br><br>
+        <input type="submit" value="Search">
+    </form>
+
+    <?php if (isset($results)): ?>
+        <h2>Results</h2>
+
+        <table>
+            <tr>
+                <th>Album Name</th>
+                <th>Album Type</th>
+                <th>Song Title</th>
+                <th>Instrument</th>
+            </tr>
+            <?php foreach ($results as $row): ?>
+                <tr>
+                    <td><?= htmlspecialchars($row['album_name']) ?></td>
+                    <td><?= htmlspecialchars($row['album_type']) ?></td>
+                    <td><?= htmlspecialchars($row['song_title']) ?></td>
+                    <td><?= htmlspecialchars($row['instrument']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+</body>
+</html>

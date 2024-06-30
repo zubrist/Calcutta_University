@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Industry Webpage</title>
+    <link rel="stylesheet" href="homepageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="musicianForm.php">Add Musician</a></li>
+
+
+            <li><a href="#" class="open-button" onclick="openForm()">Add Album</a></li>
+            <!-- POP-UP FORM -->
+            <div class="form-popup" id="myForm">
+                <form action="action_page.php" class="form-container" method="post">
+                  
+              
+                  <label for="email" ><b>Email</b></label>
+                  <input type="text" placeholder="Enter Musician Email" name="email" class="email" required>
+              
+                  <button type="submit" class="btn">SUBMIT</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+                </form>
+              </div>
+              <script>
+                function openForm() {
+                 var form= document.getElementById("myForm");
+                 form.style.display = "block";
+                form.style.position = "absolute";
+                form.style.top = "55px";
+                form.style.left = "120px";
+                form.style.zIndex = "10";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                </script>
+
+
+            <li><a href="instrument.php">Add Instruments</a></li>
+            
+            <li class="dropdown" style="right: 500px ;">
+                <a  id="collection" href="javascript:void(0);" class="dropbtn" >Our Collection &#9662;</a>
+            <div class="dropdown-content">
+                <a href="Search.php">Albums</a>
+                <a href="ViewAllSongs.php">Songs</a>
+                
+            </div>
+        </li> 
+
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to the NoTown Music Industry!</h1>
+        <p>Explore the world of music</p>
+    </header>
+    <h1 id="top">Our Top !</h1>
+    <section class="content">
+        
+        <div class="musician">
+            <img src="musician.jpeg" alt="Musician Image">
+            <h2>KATE EAST</h2>
+            <!-- <p>Description of the musician</p> -->
+        </div>
+        <div class="album">
+            <img src="album2.jpeg" alt="Album Image">
+            <h2>No Music No Life</h2>
+            <p>By - KATE EAST</p>
+        </div>
+        <div class="song">
+            <img src="song1.webp" alt="Song Image">
+            <h2>Somebody that I like
+            </h2>
+            <p>By - KATE EAST</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Music Industry. All rights reserved.</p>
+    </footer>
+</body>
+</html>
