@@ -20,5 +20,5 @@ Connect with me
   <img src="https://img.icons8.com/material-rounded/48/1877F2/facebook.png" alt="Facebook" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #1877F2, -5px -5px 15px #3399ff; border-radius: 50%;">
 </a>
 <a href="https://www.instagram.com/johndoe" target="_blank">
-  <img src="https://img.icons8.com/material-rounded/48/E4405F/instagram.png" alt="Instagram" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #E4405F, -5px -5px 15px #ff5c8d; border-radius: 50%;">
+  <img src="[https://img.icons8.com/material-rounded/48/E4405F/instagram.png](https://img.icons8.com/?size=100&id=85154&format=png&color=000000)" alt="Instagram" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #E4405F, -5px -5px 15px #ff5c8d; border-radius: 50%;">
 </a>
