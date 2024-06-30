@@ -1,11 +1,24 @@
-# Calcutta_University
-Study Materials for Computer Science Department of Calcutta University. 
+## If you liked the effort, give a star to the repository 
+
+# Wanna Contribute to this repository!
+Connect with me
 
 
 ## Connect with me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yourusername)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/yourusername)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/yourusername)
+
+<a href="https://www.linkedin.com/in/johndoe" target="_blank">
+  <img src="https://img.icons8.com/material-rounded/48/0077B5/linkedin.png" alt="LinkedIn" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #0077B5, -5px -5px 15px #00aaff; border-radius: 50%;">
+</a>
+<a href="https://twitter.com/johndoe" target="_blank">
+  <img src="https://img.icons8.com/material-rounded/48/1DA1F2/twitter.png" alt="Twitter" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #1DA1F2, -5px -5px 15px #33ccff; border-radius: 50%;">
+</a>
+<a href="https://github.com/johndoe" target="_blank">
+  <img src="https://img.icons8.com/material-rounded/48/181717/github.png" alt="GitHub" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #181717, -5px -5px 15px #333333; border-radius: 50%;">
+</a>
+<a href="https://www.facebook.com/johndoe" target="_blank">
+  <img src="https://img.icons8.com/material-rounded/48/1877F2/facebook.png" alt="Facebook" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #1877F2, -5px -5px 15px #3399ff; border-radius: 50%;">
+</a>
+<a href="https://www.instagram.com/johndoe" target="_blank">
+  <img src="https://img.icons8.com/material-rounded/48/E4405F/instagram.png" alt="Instagram" width="40" height="40" style="margin: 10px; box-shadow: 5px 5px 15px #E4405F, -5px -5px 15px #ff5c8d; border-radius: 50%;">
+</a>
