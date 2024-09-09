@@ -1,1 +1,2 @@
+*.filetype filter=lfs diff=lfs merge=lfs -text
 Mtech/Sem_1/Wireless[[:space:]]And[[:space:]]mobile[[:space:]]computing/Books.rar filter=lfs diff=lfs merge=lfs -text
