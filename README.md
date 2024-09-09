@@ -1,10 +1,11 @@
 ## If you liked the effort, give a star to the repository 
 
 # Wanna Contribute to this repository!
-Need atleast one person from each batch who will provide exam question papers.
+Connect with me
 
 
 ## Connect with me
+
 
 
 <a href="https://www.linkedin.com/in/akhlakh-ahmed-reja/" target="_blank">
